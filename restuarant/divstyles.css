@@ -1,0 +1,60 @@
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hover Effect for Navigation Items */
+
+.navbar a:hover {
+    text-decoration: underline;
+    background-color: #fff;
+}
+
+
+/* Content Section Styling */
+.content {
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 60px;
+}
+
+/* Image Styling */
+.image img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Text Module Styling */
+.text-module {
+    max-width: 400px;
+    text-align: left;
+}
+
+.text-module h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-module p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+    }
