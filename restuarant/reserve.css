@@ -125,4 +125,13 @@ button.submit-btn:active {
         font-size: 1rem;
     }
 }
+@font-face {
+  font-family: 'jokerman';
+  src: url('your-font-file.woff2') format('woff2'),
+       url('your-font-file.woff') format('woff')
+       url('Jokerman-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 
+h3 {font-family: 'jokerman'}
