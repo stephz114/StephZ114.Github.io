@@ -1,0 +1,130 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #2ecc71; /* Green background */
+    background-image: url('confetti.png'); /* Confetti background image */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #4E5FF2; /* Blue text color */
+    height: 100%;
+    min-height: 100vh;
+}
+
+/* Nav Bar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: orange; /* Orange background for navbar */
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white; /* Navbar text color */
+    font-size: 1rem;
+}
+
+/* Background Image Container */
+.background-image-container {
+    background-image: url('background.jpg'); /* Replace with background image */
+    background-size: cover;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Content and Image Styling */
+.content {
+    padding: 2rem;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.image img {
+    width: 150px; /* Logo size */
+}
+
+.text-module {
+    color: white;
+}
+
+/* Menu Section Styling */
+.menu-section {
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styling for <h2> and <strong> */
+h2, strong {
+    color: #D6336C; /* Darker pink for headings and strong text */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: orange;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+@font-face {
+  font-family: 'jokerman';
+  src: url('your-font-file.woff2') format('woff2'),
+       url('your-font-file.woff') format('woff')
+       url('Jokerman-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {font-family: 'jokerman'}
+
+h1 {font-family: 'jokerman'}
