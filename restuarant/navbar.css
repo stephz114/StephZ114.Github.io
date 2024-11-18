@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar Styling for Restaurant Look */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: orange; /* Orange background for the navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar img {
+    height: 50px; /* Adjust logo size */
+    margin-right: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white; /* White text for readability */
+    font-size: 1.1rem;
+    font-family: 'Georgia', serif; /* Elegant serif font for restaurant style */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.navbar a:hover {
+    color: #ffe4b5; /* Light warm color on hover */
+    border-bottom: 2px solid #ffe4b5; /* Underline effect on hover */
+}
