@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.background-image-container {
+    background-image: url('background.jpg'); /* replace with your background image */
+    background-size: cover;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.menu-section {
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
