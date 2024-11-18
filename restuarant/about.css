@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text for readability */
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f39c12; /* Warm orange background */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+    height: 50px; /* Logo size */
+    margin-right: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white; /* White text for readability */
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffe4b5; /* Light cream on hover */
+}
+
+/* Header Image */
+center img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth to the image */
+    margin-top: 20px;
+}
+
+/* About Section */
+center h2 {
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555; /* Subtle gray text */
+    line-height: 1.8;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 strong {
+    color: #f39c12; /* Highlight key phrases with warm orange */
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    center img {
+        width: 95%; /* Adjust image width for smaller screens */
+    }
+
+    center h2 {
+        font-size: 1.2rem; /* Adjust text size */
+    }
+}
