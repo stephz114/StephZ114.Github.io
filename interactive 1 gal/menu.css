@@ -1,0 +1,166 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    background-image: 
+        radial-gradient(circle at 20% 30%, #ffffff 2%, transparent 3%),
+        radial-gradient(circle at 60% 70%, #ffffff 2%, transparent 3%),
+        radial-gradient(circle at 80% 20%, #ffffff 1%, transparent 2%),
+        radial-gradient(circle, #ff0000 15%, transparent 16%),
+        radial-gradient(circle, #000000 15%, transparent 16%);
+    background-size: 200px 200px, 300px 300px, 400px 400px, 800px 800px, 1200px 1200px;
+    background-repeat: repeat;
+}
+
+/* Wavy Overlay Effect */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/4/42/Persona_5_Wavy_Lines_Background.png') center/cover; /* Replace with local asset */
+    opacity: 0.6;
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+/* Chaotic Comic-Book-Like Edges */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 70%, #ff0000 70%, #ff0000 75%, transparent 75%),
+                linear-gradient(225deg, transparent 70%, #ffffff 70%, #ffffff 75%, transparent 75%);
+    background-size: 40px 40px;
+    opacity: 0.4;
+    mix-blend-mode: screen;
+    z-index: -1;
+}
+
+/* Desktop Window */
+.desktop-window {
+    background: linear-gradient(135deg, #ff0000, #000000);
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    width: 85%;
+    max-width: 900px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8), 0 0 10px #ff0000;
+    text-align: center;
+    position: relative;
+}
+
+/* Window Header */
+.window-header {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    background: #000000;
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    text-shadow: 3px 3px #ff0000;
+    animation: shake 1.5s infinite;
+}
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+}
+
+a:hover {
+    color: #ff0000;
+    text-shadow: 2px 2px #ffffff, -2px -2px #ff0000;
+    transform: scale(1.1);
+}
+
+/* Project List */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.project-list a p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #000000;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project-list a p:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(45deg, #ff0000, #000000);
+    box-shadow: 0 0 15px #ffffff, 0 0 20px #ff0000;
+}
+
+/* Wavy Hover Effect on Links */
+.project-list a p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    transform: skewX(-45deg);
+    animation: wave 2s infinite linear;
+    pointer-events: none;
+}
+
+.project-list a p:hover::before {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+}
+
+/* Animations */
+@keyframes shake {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-2px, 2px);
+    }
+    50% {
+        transform: translate(2px, -2px);
+    }
+    75% {
+        transform: translate(-2px, -2px);
+    }
+}
+
+@keyframes wave {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
